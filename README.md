@@ -22,7 +22,7 @@
                    [GitHub]              [AI連携]     [Notion/Grafana]
 ```
 
-- **データ層**: PostgreSQL, AWS S3/MinIO
+- **データ層**: Supabase (PostgreSQL), MinIO
 - **処理層**: Python, pandas, Apache Airflow, MeCab, dbt
 - **分析層**: Python, scikit-learn, LangChain, OpenAI API
 - **表示層**: Grafana, Notion, GitHub
@@ -31,7 +31,7 @@
 
 ### 前提条件
 
-- PostgreSQL 14以上
+- Supabaseアカウント
 - Python 3.8以上
 - Notion アカウント (チームプラン推奨)
 - GitHub アカウント
@@ -56,10 +56,9 @@
    # .envファイルを編集して必要な環境変数を設定
    ```
 
-4. データベースのセットアップ
-   ```bash
-   psql -U your_user -d your_database -f database/schema.sql
-   ```
+4. Supabaseのセットアップ
+   - [Supabase設定ガイド](docs/setup/supabase-setup.md)を参照
+   - SQL Editorで`database/schema.sql`を実行
 
 5. Notion統合の設定
    - Notion API統合を設定し、トークンを取得
@@ -78,8 +77,8 @@
    - Notion/GitHub環境構築
    - 基本データ収集と分析
 
-2. **フェーズ2**: データベース実装（2-3ヶ月）
-   - PostgreSQL構築
+2. **フェーズ2**: データベース実装（1-2ヶ月）
+   - Supabase設定
    - ETLパイプライン開発
 
 3. **フェーズ3**: 可視化基盤（1-2ヶ月）
