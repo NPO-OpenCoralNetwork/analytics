@@ -1,0 +1,80 @@
+# 環境設定
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 仮想環境
+venv/
+ENV/
+env/
+.venv/
+
+# IDE設定
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# ログ
+logs/
+*.log
+
+# テストカバレッジ
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# MinIO / ローカルストレージ
+storage/
+minio_data/
+
+# Airflow
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+webserver_config.py
+logs/
+unittests.cfg
+
+# Grafana
+grafana.db
+
+# DBT
+target/
+dbt_packages/
+logs/
+
+# その他
+*.bak
+*.tmp
+*.temp
+.pytest_cache/
